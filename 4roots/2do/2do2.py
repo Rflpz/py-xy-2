@@ -14,3 +14,15 @@
 # it will produce 100 points
 # [1.0, 1.1, ... , 9.9, 10]
 #
+import sys
+
+sec = (x/10 for x in range(1, 100)) 
+for x in sec:
+    px = np.array([5, x]) 
+py = np.array([1, 30]) 
+plt.plot(px, py)
+plt.show()
+
+#Grafica
+'''plt.savefig(sys.stdout.buffer)
+#sys.stdout.flush()'''
